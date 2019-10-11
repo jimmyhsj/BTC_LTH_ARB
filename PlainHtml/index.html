@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crypto ARB SYS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="./lib/css/cover.css" rel="stylesheet">
+</head>
+
+<body class="text-center" style="height:100% !important;">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Crypto Arb</h3>
+                <!--<nav class="nav nav-masthead justify-content-center">-->
+                <!--<a class="nav-link active" href="#">Home</a>-->
+                <!--<a class="nav-link" href="#">Features</a>-->
+                <!--<a class="nav-link" href="#">Contact</a>-->
+                <!--</nav>-->
+            </div>
+        </header>
+
+        <main role="main" class="">
+
+            <br>
+            <div class="row">
+                <div class="col col-lg-12 col-sm-12">
+                    <table class="table table-striped table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <td align="left" style="font-weight: bold;">Quote</td>
+                                <td align="right" style="font-weight: bold;">Price</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="left">BTC INDEX</td>
+                                <td id="btc_index" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">LTH INDEX</td>
+                                <td id="lth_index" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">BCH INDEX</td>
+                                <td id="bch_index" align="right"></td>
+                            </tr>
+                            <!--  -->
+                            <!-- <tr>
+                                <td align="left">OK BTC Spot</td>
+                                <td id="btc_spot_okcoin" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK LTH Spot</td>
+                                <td id="lth_spot_okcoin" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK BCH Spot</td>
+                                <td id="bch_spot_okcoin" align="right"></td>
+                            </tr> -->
+                            <!--  -->
+                            <tr>
+                                <td align="left">KRA BTC Spot</td>
+                                <td id="btc_spot_kraken" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">KRA LTH Spot</td>
+                                <td id="lth_spot_kraken" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">KRA USDT Spot</td>
+                                <td id="usdt_spot_kraken" align="right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table class="table table-striped table-hover table-sm">
+                        <tbody>
+                            <tr>
+                                <td align="left">OK BTC This Week</td>
+                                <td id="btc_fut_thisweek" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK BTC +1 Week</td>
+                                <td id="btc_fut_1w" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK BTC +1 QTR</td>
+                                <td id="btc_fut_1q" align="right"></td>
+                            </tr>
+                            <!--  -->
+                            <tr>
+                                <td align="left">OK LTH This Week</td>
+                                <td id="lth_fut_thisweek" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK LTH +1 Week</td>
+                                <td id="lth_fut_1w" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK LTH +1 QTR</td>
+                                <td id="lth_fut_1q" align="right"></td>
+                            </tr>
+                            <!--  -->
+                            <tr>
+                                <td align="left">OK BCH This Week</td>
+                                <td id="bch_fut_thisweek" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK BCH +1 Week</td>
+                                <td id="bch_fut_1w" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">OK BCH +1 QTR</td>
+                                <td id="bch_fut_1q" align="right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col col-lg-12 col-sm-12">
+                    <h3 align="left">OKcoin Index Basis</h3>
+                    <table class="table table-striped table-hover table-sm">
+                        <tbody>
+                            <tr>
+                                <td align="left">BTC Basis This Week</td>
+                                <td id="btc_basic_thisWeek" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">LTC Basis This Week</td>
+                                <td id="ltc_basic_thisWeek" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">BCH Basis This Week</td>
+                                <td id="bch_basic_thisWeek" align="right"></td>
+                            </tr>
+                            <!--  -->
+                            <tr>
+                                <td align="left">BTC Basis +1 Week</td>
+                                <td id="btc_basic_1Week" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">LTC Basis +1 Week</td>
+                                <td id="ltc_basic_1Week" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">BCH Basis +1 Week</td>
+                                <td id="bch_basic_1Week" align="right"></td>
+                            </tr>
+                            <!--  -->
+                            <tr>
+                                <td align="left">BTC Basis Quarter</td>
+                                <td id="btc_basic_quater" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">LTC Basis Quarter</td>
+                                <td id="ltc_basic_quater" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">BCH Basis Quarter</td>
+                                <td id="bch_basic_quater" align="right"></td>
+                            </tr>
+                            <!--  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col col-lg-12 col-sm-12">
+                    <h3 align="left">Current Position</h3>
+                    <table class="table table-striped table-hover table-sm">
+                        <tbody>
+                            <tr>
+                                <td align="left">Kraken USDT</td>
+                                <td id="kraken_USDT_postion" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">Kraken XXBT</td>
+                                <td id="kraken_XXBT_position" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">Kraken XLTC</td>
+                                <td id="kraken_XLTC_position" align="right"></td>
+                            </tr>
+                            <tr>
+                                <td align="left">Kraken ZUSD</td>
+                                <td id="kraken_ZUSD_position" align="right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>BTC LTC ARB SYS @lol</p>
+            </div>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+        <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+        <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+        <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+        <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+        <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+        <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+        <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+        <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+        <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+        <script type="text/javascript" src="apigClient.js"></script>
+        <script type="text/javascript" src="lib/js/OkcoinDataApi.js"></script>
+        <script type="text/javascript" src="lib/js/KrakenDataApi.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                RefreashData();
+                setInterval(RefreashData, 30000);
+
+                function RefreashData() {
+                    var OkCoinData = OkCoinLoadData();
+                    var KrakenData = KrakenLoadData();
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>
